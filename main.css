@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: wheat;
 }
 
 .grid {
@@ -16,4 +18,9 @@ body {
     outline: solid black;
     width: 400px;
     height: 400px;
+}
+
+.pixel {
+    box-sizing: border-box;
+    border: solid 1px #000;
 }

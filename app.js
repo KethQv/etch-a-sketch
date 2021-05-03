@@ -5,7 +5,6 @@ for (let i = 0; i < 16; i++) {
     div.classList = 'pixel';
     div.style.width  = '100px';
     div.style.height = '100px';
-    div.style.outline = 'solid black 1px';
     grid.appendChild(div);
 }
 
