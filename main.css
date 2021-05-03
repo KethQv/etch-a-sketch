@@ -13,8 +13,7 @@ body {
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     outline: solid black;
     width: 700px;
     height: 700px;
@@ -24,7 +23,8 @@ body {
 .pixel {
     transition: all 500ms linear;
     box-sizing: border-box;
-    border: solid 1px #000;
+    width: 100%;
+    height: 100%;
 }
 
 .pixel--flip {

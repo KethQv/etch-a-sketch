@@ -1,14 +1,14 @@
 const grid = document.querySelector('.grid');
 
-const pixelLength = '175px';
+const gridLength = 40;
 
-for (let i = 0; i < 16; i++) {
+grid.style.gridTemplateColumns = `repeat(${gridLength}, ${gridLength}fr)`;
+grid.style.gridTemplateRows = `repeat(${gridLength}, ${gridLength}fr)`;
+for (let i = 0; i < gridLength * gridLength; i++) {
     let pixelContainer = document.createElement('div');
     pixelContainer.classList = 'pixel-container';
     let pixel = document.createElement('div');
     pixel.classList = 'pixel';
-    pixel.style.width  = pixelLength;
-    pixel.style.height = pixelLength;
     grid.appendChild(pixelContainer);
     pixelContainer.appendChild(pixel);
 }
