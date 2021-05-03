@@ -16,11 +16,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     outline: solid black;
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
+    perspective: 1000px;
 }
 
 .pixel {
+    transition: all 500ms linear;
     box-sizing: border-box;
     border: solid 1px #000;
+}
+
+.pixel--flip {
+    transform: rotateY(360deg);
 }
