@@ -9,10 +9,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: wheat;
 }
 
-.grid {
+.menu__button, .menu__checkbox {
+    background-color: #555555;
+    opacity: 0.7;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: arial;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+    transition: opacity 300ms;
+}
+
+.menu__button--hover:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.menu__button--active:active {
+    position:relative;
+    top: 1px;
+}
+
+.pixel-grid {
     display: grid;
     outline: solid black;
     width: 700px;
@@ -30,3 +56,4 @@ body {
 .pixel--flip {
     transform: rotateY(360deg);
 }
+
