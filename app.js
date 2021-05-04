@@ -3,7 +3,7 @@
 const pixelGrid = document.querySelector('.pixel-grid');
 const clearBtn = document.querySelector('.menu__button');
 const flipCheckBox = document.querySelector('.menu__checkbox-flip');
-let hasListener = false;
+
 function randColor() {
     return Math.floor(Math.random() * 256);
 }
