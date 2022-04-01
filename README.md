@@ -1,7 +1,7 @@
 # Etch a sketch
 Finished ✅
 
-Take a look here: https://kethqv.github.io/etch-a-sketch/
+Take a look here: https://cin4ed.github.io/etch-a-sketch/
 
 New things I learned doing this:
 * How to toggle class names on HTML elements from JavaScript ✅
